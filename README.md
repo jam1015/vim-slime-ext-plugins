@@ -42,7 +42,7 @@ In this example, we are going to write a plugin that sends the text it receives 
 
 The configuration function takes the current configuration in parameter and must return the updated configuration. For our example, one could write the following :
 
-```vimscript
+```vim
 function! SlimeFooPluginConfig(config)
   if !exists("a:config['foo']")
     let a:config["foo"] = {"file": "foo.txt"}
